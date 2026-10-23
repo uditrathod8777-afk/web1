@@ -1,0 +1,59 @@
+<section id="home" class="hero">
+  <!-- Floating geometric shapes -->
+  <div class="hero-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+  </div>
+
+  <div class="hero-container">
+    <!-- Profile Image -->
+    <div class="hero-image-wrap reveal">
+      <div class="hero-image-ring">
+        <img
+          src="{{ url_for('static', filename='images/profile.jpg') }}"
+          alt="Alex Morgan profile photo"
+          class="hero-img"
+          id="hero-profile-img"
+          onerror="this.style.display='none'; document.getElementById('hero-avatar').style.display='flex';"
+        />
+        <div class="hero-avatar" id="hero-avatar">AM</div>
+      </div>
+      <div class="hero-image-glow"></div>
+    </div>
+
+    <!-- Hero Text -->
+    <div class="hero-text reveal">
+      <p class="hero-greeting"><i class="fas fa-hand-wave"></i> Hello, World!</p>
+      <h1 class="hero-name">Hi, I'm <span class="gradient-text">Alex Morgan</span></h1>
+      <h2 class="hero-role">
+        <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-bio">
+        A passionate Python & Web Developer who loves turning complex problems into elegant,
+        efficient solutions. I build modern, scalable web applications with clean code and
+        great user experiences.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> View My Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> Contact Me
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/alexmorgan"   target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/alexmorgan" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:alex@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+    <div class="scroll-dot"></div>
+  </a>
+</section>

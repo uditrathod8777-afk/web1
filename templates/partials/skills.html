@@ -1,0 +1,45 @@
+<section id="skills" class="skills section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">What I Know</p>
+      <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      <div class="section-line"></div>
+      <p class="section-desc">Technologies and tools I work with to bring ideas to life.</p>
+    </div>
+
+    <div class="skills-grid" id="skills-grid">
+      {% for skill in skills %}
+      <div class="skill-card reveal" data-percent="{{ skill.percent }}">
+        <div class="skill-icon-wrap" style="--skill-color: {{ skill.color }}">
+          <i class="{{ skill.icon }} skill-icon"></i>
+        </div>
+        <div class="skill-info">
+          <div class="skill-header">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percent">{{ skill.percent }}%</span>
+          </div>
+          <div class="skill-bar-bg">
+            <div class="skill-bar-fill" style="--target-width: {{ skill.percent }}%; background: linear-gradient(90deg, {{ skill.color }}, #7c3aed)"></div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Extra tech tags -->
+    <div class="tech-tags reveal">
+      <p class="tech-tags-label">Also familiar with:</p>
+      <div class="tags-wrap">
+        <span class="tag">NumPy</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Matplotlib</span>
+        <span class="tag">Jinja2</span>
+        <span class="tag">SQLAlchemy</span>
+        <span class="tag">Docker</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Postman</span>
+        <span class="tag">Figma</span>
+      </div>
+    </div>
+  </div>
+</section>

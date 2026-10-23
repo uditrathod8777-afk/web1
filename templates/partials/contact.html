@@ -1,0 +1,88 @@
+<section id="contact" class="contact section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Get In Touch</p>
+      <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+      <div class="section-line"></div>
+      <p class="section-desc">Have a project in mind or just want to say hi? My inbox is always open!</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Info -->
+      <div class="contact-info reveal">
+        <h3 class="contact-info-title">Let's work together</h3>
+        <p class="contact-info-desc">
+          I'm currently available for freelance work and open to full-time opportunities.
+          Whether you have a question, a project idea, or just want to connect — feel free
+          to reach out!
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:alex@example.com" class="contact-link-card">
+            <div class="contact-link-icon email-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-value">alex@example.com</span>
+            </div>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
+          </a>
+
+          <a href="https://github.com/alexmorgan" target="_blank" rel="noopener" class="contact-link-card">
+            <div class="contact-link-icon github-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-value">github.com/alexmorgan</span>
+            </div>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
+          </a>
+
+          <a href="https://linkedin.com/in/alexmorgan" target="_blank" rel="noopener" class="contact-link-card">
+            <div class="contact-link-icon linkedin-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-link-text">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-value">linkedin.com/in/alexmorgan</span>
+            </div>
+            <i class="fas fa-arrow-right contact-link-arrow"></i>
+          </a>
+        </div>
+
+        <div class="contact-availability">
+          <span class="availability-dot"></span>
+          Available for new opportunities
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+              <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+              <span class="field-error" id="email-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+            <span class="field-error" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or just say hello..." required></textarea>
+            <span class="field-error" id="message-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+            <span class="btn-loading" style="display:none"><i class="fas fa-spinner fa-spin"></i> Sending...</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

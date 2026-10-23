@@ -1,0 +1,101 @@
+<section id="about" class="about section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Get To Know Me</p>
+      <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <!-- Image Column -->
+      <div class="about-image-col reveal">
+        <div class="about-image-wrap">
+          <img
+            src="{{ url_for('static', filename='images/about.jpg') }}"
+            alt="Alex Morgan"
+            class="about-img"
+            onerror="this.style.display='none'; document.getElementById('about-avatar').style.display='flex';"
+          />
+          <div class="about-avatar" id="about-avatar">AM</div>
+          <div class="about-image-border"></div>
+          <div class="about-badge">
+            <i class="fas fa-code"></i>
+            <span>3+ Years</span>
+            <small>Experience</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Column -->
+      <div class="about-text-col reveal">
+        <h3 class="about-subtitle">Python Developer &amp; Web Enthusiast</h3>
+        <p class="about-para">
+          Hi! I'm <strong>Alex Morgan</strong>, a passionate developer based in London, UK.
+          I specialize in building robust backend systems and modern web applications using
+          Python, Flask, and modern JavaScript. I love solving challenging problems and
+          turning ideas into reality through code.
+        </p>
+        <p class="about-para">
+          My journey in tech started when I wrote my first "Hello, World!" in Python — and
+          I've been hooked ever since. I thrive on learning new technologies and enjoy
+          collaborating on open-source projects. When I'm not coding, you'll find me reading
+          tech blogs, exploring algorithms, or contributing to developer communities.
+        </p>
+        <p class="about-para">
+          I'm currently open to <strong>freelance projects</strong> and
+          <strong>full-time opportunities</strong> where I can contribute my skills, grow
+          professionally, and make a meaningful impact.
+        </p>
+
+        <!-- Info Grid -->
+        <div class="about-info-grid">
+          <div class="about-info-item">
+            <span class="info-label"><i class="fas fa-user"></i> Name</span>
+            <span class="info-value">Alex Morgan</span>
+          </div>
+          <div class="about-info-item">
+            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+            <span class="info-value">London, UK</span>
+          </div>
+          <div class="about-info-item">
+            <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
+            <span class="info-value">alex@example.com</span>
+          </div>
+          <div class="about-info-item">
+            <span class="info-label"><i class="fas fa-briefcase"></i> Status</span>
+            <span class="info-value available">Available for Hire</span>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="#" class="btn btn-primary" download>
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-comments"></i> Let's Talk
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Row -->
+    <div class="stats-row reveal">
+      <div class="stat-card">
+        <span class="stat-number">3+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">20+</span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+<section id="education" class="education section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">My Background</p>
+      <h2 class="section-title">Education &amp; <span class="gradient-text">Qualifications</span></h2>
+      <div class="section-line"></div>
+      <p class="section-desc">My academic journey and key achievements along the way.</p>
+    </div>
+
+    <div class="timeline">
+      {% for edu in education %}
+      <div class="timeline-item {% if loop.index is odd %}timeline-left{% else %}timeline-right{% endif %} reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-card-header">
+            <div class="timeline-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="timeline-year">{{ edu.year }}</span>
+          </div>
+          <h3 class="timeline-degree">{{ edu.degree }}</h3>
+          <p class="timeline-institution">
+            <i class="fas fa-university"></i> {{ edu.institution }}
+          </p>
+          <p class="timeline-desc">{{ edu.description }}</p>
+          <div class="timeline-achievements">
+            {% for achievement in edu.achievements %}
+            <span class="achievement-badge">
+              <i class="fas fa-star"></i> {{ achievement }}
+            </span>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
